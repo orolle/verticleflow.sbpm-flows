@@ -1,0 +1,12 @@
+!!! 5
+html
+  head
+    title Decide Order
+  body
+    h2 Decide Order
+    div Customer ordered #{order}
+    form(method="post", name="order-form")
+      select(name="decision")
+        option(value="accept") accept order
+        option(value="deny") deny order
+      input(type="submit", value="Submit decision")
